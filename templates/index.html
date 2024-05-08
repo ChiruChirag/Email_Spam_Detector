@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Email Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Spam Email Detection</h1>
+    <form id="email-form">
+        <label for="email">Enter your email:</label><br>
+        <input type="text" id="email" name="email" class="form-input"><br>
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+    <div class="container"> <!-- Centered container -->
+        <div id="prediction-result" class="output-box"> <!-- Output box -->
+            <span id="result-text">RESULT :</span> <!-- Result text -->
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Chirag H</p>
+        <p>PES UNIVERSITY</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Handle form submission with AJAX
+        $('#email-form').submit(function(event) {
+            event.preventDefault(); // Prevent default form submission
+            var emailText = $('#email').val(); // Get the email text
+            $.ajax({
+                type: 'POST',
+                url: '/predict',
+                data: { email: emailText },
+                success: function(response) {
+                    var resultText = 'The email \'' + response.email + '\' is ' + response.prediction;
+                    $('#result-text').text(resultText); // Update result text
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

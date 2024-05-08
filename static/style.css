@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color */
+    padding: 80px;
+    background-color: #001528; /* Dark blue background color */
+    border: 2px solid #fff; /* White border */
+    border-radius: 50px; /* Border radius */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 36px; /* Font size */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+/* Form Styles */
+form {
+    text-align: center; /* Center align */
+    margin-bottom: 20px; /* Add space below form */
+}
+
+.form-input {
+    width: 400px; /* Increased input width */
+    padding: 15px; /* Increased input padding */
+    font-size: 18px; /* Increased input font size */
+    border: 1px solid #fff; /* Input border */
+    border-radius: 5px; /* Input border radius */
+    margin-right: 10px; /* Add space between input and button */
+    background-color: #494949; /* Dark blue background color */
+    color: #fff; /* Text color */
+}
+
+.submit-btn {
+    background-color: #5aa3cb; /* Green button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 30px; /* Increased button padding */
+    font-size: 18px; /* Increased button font size */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer;
+}
+
+/* Centered Container Styles */
+.container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height */
+}
+
+/* Output Box Styles */
+.output-box {
+    background-color: #5aa3cb; /* Green box background color */
+    color: #fff; /* Text color */
+    padding: 18px; /* Padding */
+    border-radius: 5px; /* Border radius */
+}
+
+/* Result Text Styles */
+#result-text {
+    font-size: 20px; /* Increased result text font size */
+    text-align: center; /* Center align */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Center align */
+    margin-top: 40px; /* Add space above footer */
+    font-size: 16px; /* Footer text font size */
+    color: #fff; /* Text color */
+}
