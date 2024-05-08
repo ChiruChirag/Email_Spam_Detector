@@ -6,6 +6,10 @@
         "use": "@vercel/python"
       },
       {
+        "src": "templates/index.html",
+        "use": "@vercel/python"
+      },
+      {
         "src": "static/style.css",
         "use": "@vercel/static"
       }
