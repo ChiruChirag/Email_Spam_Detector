@@ -7,7 +7,7 @@
       },
       {
         "src": "templates/index.html",
-        "use": "@vercel/python"
+        "use": "@vercel/templates"
       },
       {
         "src": "static/style.css",
