@@ -9,3 +9,4 @@ scikit-learn==1.2.2
 scipy
 threadpoolctl==3.5.0
 Werkzeug==2.2.2
+gunicorn==20.1.0
