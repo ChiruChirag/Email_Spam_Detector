@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
-
+import os
 app = Flask(__name__)
 
 # Load the trained model
