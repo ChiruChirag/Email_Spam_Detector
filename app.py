@@ -20,4 +20,4 @@ def predict():
     return jsonify({'email': email_text, 'prediction': 'spam' if prediction == 1 else 'not spam'})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    app.run(host="localhost", port=int(os.environ.get("PORT", 8000)))
